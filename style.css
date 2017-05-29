@@ -1,0 +1,334 @@
+body{
+    margin:0;
+     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header{
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden !important;
+    position: fixed !important;
+    z-index: 999;
+    top: 0;
+    border-radius: 10px;
+    transition: height 0.5s;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background:black;
+    padding-bottom: 40px;
+}
+.header h1{
+    font-size: 24px;
+}
+
+header div{
+  transition: height 0.3s;
+}
+header img{
+ transition: all 0.5s;
+}
+
+/* animation header*/
+header.smaller{
+    height: 25px;
+    font-size: 10px;
+    opacity: 0.9;
+}
+header.smaller img{
+  height: 60;
+  width: 60;
+}
+
+header.smaller h1{
+  padding: 20px 0px 0px 50px;
+  margin:0;
+}
+
+header.smaller div{
+  height: 10px;
+}
+
+/**/
+.background-foto{
+    height: 860px;
+    max-width: 100%;
+    background: url("images/background.jpg") no-repeat center;
+    margin-bottom: 50px;
+    background-size: 100%;
+}
+.header h1{
+    margin: 30px;
+    padding: 40px 30px 30px 30px;
+    color: white;
+}
+.text-2{
+    padding-left: 7px;
+}
+.inicio{
+    height: 47px;
+    width: 20%;
+    transition: all 0.3s;
+    background-color:#CD01CC;
+}
+
+.header h1 {
+    transition: .5s;
+    cursor: pointer;
+}
+
+.header h1:hover{
+    color: red;
+}
+.plan-de-estudios{
+    height: 47px;
+    transition: all 0.3s;
+    width: 30%;
+    background-color: #FEF009;
+}
+.background-logo{
+    text-align: center;
+}
+.logo{
+    height: 94px;
+    transition: all 0.3s;
+    width: 170px;
+    background-color: black;
+}
+.center{
+    text-align: center;
+    margin-top: 134px;
+    padding:120px;
+}
+.center h3 {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    color: white;
+}
+.perfiles-academicos{
+    height: 47px;
+    width: 30%;
+    background-color:#FEF009;   
+}
+.becas{
+    height: 47px;
+    width: 20%;
+    background-color:#CD01CC;   
+}
+.carusel{
+    padding-top: 10px;
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+/*separator*/
+.container {
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  padding-top:40px;
+  perspective: 1000px;
+}
+
+.carousel {
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+  background: url("images/post-1.png") no-repeat center;
+}
+.b {
+  transform: rotateY(60deg) translateZ(250px);
+  background: url("images/post-2.png") no-repeat center;
+}
+.c {
+  transform: rotateY(120deg) translateZ(250px);
+  background: url("images/post-3.png") no-repeat center;
+}
+.d {
+  transform: rotateY(180deg) translateZ(250px);
+  background: url("images/post-4.png") no-repeat center;
+}
+.e {
+  transform: rotateY(240deg) translateZ(250px);
+  background: url("images/post-5.png") no-repeat center;
+} 
+.f {
+  transform: rotateY(300deg) translateZ(250px);
+  background: url("images/post-6.png") no-repeat center;
+}
+
+.next, .prev {
+  width: 50px;
+  position: absolute;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #CB02C2;
+  border-radius: 10px;
+  transition: all 0.5s; 
+  box-shadow: 0 5px 0 #999;
+}
+
+.next:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.next{
+    right: 5%;
+    top:40%;
+}
+
+.prev{
+    left: 5%;
+    top:40%;
+}
+.next:hover, .prev:hover { 
+  background-color:purple;
+}
+
+ /* Profile section*/
+
+ .info{
+     width: 100%;
+     height: 800px;
+     background-color: #E8E8E8;
+     border-bottom: 1px solid black;
+     font-size: 20px;
+     letter-spacing: 1px;
+ }  
+
+ .info-c img{
+     border-radius: 20px;
+     margin-right: 20px;
+     position: relative;
+     left: 5%;
+ }
+
+ .info-c{
+     display: flex;
+     width: 100%;
+ }
+
+.ing-text{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.text-5 h3{
+    padding-left: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.text-5 h4{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+
+.text-5{
+    padding-left: 90px;
+    width: 100%;
+    position: relative;
+    right:1%;
+}
+
+
+/* Seccion de perfil*/
+
+.perfil{
+    display: flex;
+    width: 100%;
+}
+
+.perfil h3{
+    width: 98%;
+    text-align: center;
+    font-size: 35px;
+    margin-left:  10px; 
+    color: white;
+}
+
+.aspirante{
+    width: 50%;
+    opacity: .4;
+    background-color: blue;
+    height: 500px;
+}
+.egresado{
+    width: 50%;
+    opacity: .4;
+    background-color: purple;
+    height: 500px;
+}
+
+/* Seccion de Footer*/
+.footer{
+    color:white;
+    width: 100%;
+    display: flex;
+    background:#9D28B1;
+}
+
+.footer img{
+    padding: 30px 30px 30px 90px;
+}
+
+.footer div{
+    padding-right: 80px;
+    width: 50%;
+}
+
+.footer .direct{
+    width: 370px;
+    padding: 0 !important;
+}
+.fot-info{
+    display: flex;
+}
+
+.social img{
+    padding-top: 15px;
+    display: block !important;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    transition: all 0.5s;
+}
+
+
+.twitter:hover{
+  opacity: .7;
+}
+.facebook:hover{
+  opacity: .7;
+}
