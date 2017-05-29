@@ -325,10 +325,14 @@ header.smaller div{
     transition: all 0.5s;
 }
 
-
 .twitter:hover{
   opacity: .7;
 }
 .facebook:hover{
   opacity: .7;
+}
+
+.tittle-multi
+{
+  width: 100%; text-align: center; font-size: 35px; padding-top: 10px;
 }
