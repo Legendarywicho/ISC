@@ -68,9 +68,7 @@ header.smaller div{
 
 /**/
 
-.center-image{
-  padding-right: 90px;
-}
+
 .background-foto-3{
   height: 860px;
   max-width: 100%;
@@ -125,18 +123,25 @@ header.smaller div{
     background-color: black;
 }
 .center{
-    text-align: center;
     margin-top: 134px;
-    width: 90%;
+    width: 100%;
     padding:120px;
 }
 .center h3 {
     font-size: 60px;
     padding: 0;
+    text-align: center;
+    width: 90%;
     margin-right: 20px;
     margin-top: 20px;
     color: white;
 }
+
+.main-image{
+    position: relative;
+    left: 27%
+}
+
 .perfiles-academicos{
     height: 47px;
     width: 30%;
@@ -383,7 +388,7 @@ header.smaller div{
   height: 40%;
   position: absolute;
   left: 35%;
-  top: 154%;
+  top: 152.5%;
   z-index: 2;
 }
 .tittle-multi h1{
@@ -404,6 +409,7 @@ header.smaller div{
   color: white;
   top: 12%;
 }
+
 .title-becas h1{
   left: 17%;
   position: relative;
@@ -498,8 +504,6 @@ header.smaller div{
   height: 500px;
   display: flex;
 }
-
-
 .box-2 , .box-1{
   font-size: 20px;
   padding-top: 20px;
@@ -507,6 +511,28 @@ header.smaller div{
   border: 1px solid black;
   margin:20px;
 }
+
+/* PLAN DE ESTUDIOS */
+.title-studios{
+  font-size: 60px;
+  width: 100%;
+  color: white;
+  margin-left: 20px;
+  position: relative;
+  top: 22%;
+  text-align: center;
+}
+.lol{
+  top: 66%;
+  left: 48%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  position: absolute;
+  background: #FBCE3A;
+  border-radius: 500px;
+}
+
 
 /*--------------------s*/
 
