@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <head>
+    	  <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+            <meta charset="UTF-8">
+            <title>Ing en software </title>
+            <link rel="stylesheet" type="text/css" href="../style/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+
+                    <header class="header">
+                        <div class="inicio">
+                            <div class="text-1">
+                            <a href="../index.html">
+                                <h1>Inicio</h1>
+                             </a>
+                            </div>
+                        </div>
+                        <div class="plan-de-estudios">
+                            <div class="text-2">
+                                <a href="plan-de-estudios.html">
+                                  <h1>Plan de estudios</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <div class="background-logo">
+                                <img src="../images/istmo.png" alt="Logo de la escuela" width="120" height="120">
+                            </div>
+                        </div>
+                        <div class="perfiles-academicos">
+                            <div class="text-2">
+                              <a href="spanish/contacto.html">
+                                  <h1>Contacto</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="becas">
+                            <div class="text-4">
+                                <a href="Becas.html">
+                                <h1>Becas</h1>
+                                </a
+                            </div>
+                         </div>
+                    </header>
+                     <section class="background-body">
+                        <div class="social-bar">
+                            twitter
+                            facebook
+                            google
+                        </div>
+                    </section>
+        <h3>My Google Maps Demo</h3>
+        <div id="map"></div>
+        <div class="container-form">
+          <div class="know-carrer">
+              <h2>Conoce mas de la carrera</h2>
+          </div>
+          <div class="test-container">
+            <div class="container-child">
+              <div class="form">
+                <label for="name"> Nombre</label>
+
+                <form action="mailto:xvleg3ndaryxv@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="Nombre completo" value="" placeholder="Nombre completo">
+              </div>
+              <label for="telefono">Telefono</label>
+              <div class="form-2">
+                <input type="text" name="Telefono"  placeholder="Telefono" id="telefono">
+              </div>
+              <label for="correo">Correo</label>
+              <div class="form-3">
+                <input type="text" name="Correo Electronico" placeholder="Correo" id="correo">
+              </div>
+            </div>
+            <div class="comments">
+              <label for="Comentarios">Comentarios</label>
+               <textarea name="Comentarios" id="Comentarios" rows="12" cols="50"></textarea>
+                <input type="submit" name="enviar" class="button-2" id="button"/>
+                </form>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER-->
+        <footer class="footer">
+            <div class="img">
+                <img src="../images/istmo.png" alt="Logo de la escuela" width="200" height="200">
+            </div>
+            <div class="fot-info">
+                <div class="tel">
+                    <h1>Telefono</h1>
+                    <h3>(921) 210-9590</h3>
+                </div>
+                <div class="know">
+                    <h1>Conocenos</h1>
+                    <h3>-Planes de estudios</h3>
+                    <h3>-Perfiles Academicos</h3>
+                    <h3>-Becas</h3>
+                </div>
+                <div class="direct">
+                    <h1>Dirección</h1>
+                    <h3>A.v universidad, kilometro 8.5 colonia santa celilia</h3>
+                    <h3>Coatzacoalcos, veracruz</h3>
+                    <h3>C.P 96520</h3>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/uistmoamericana?lang=es" target="_blank">
+                    <img src="../images/twit.png" alt="Twitter" class="twitter">
+                </a>
+                <a href="https://www.facebook.com/Universidad-Istmo-Americana-153904661343430/" target="_blank">
+                    <img src="../images/face.png" alt="Facebook" class="facebook">
+                </a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Idioma</button>
+              <div class="dropdown-content">
+                <a href="#">Español</a>
+                <a href="#" id="a">English</a>
+              </div>
+          </div>
+        </footer>
+  </body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMB-4Xr4k2SlUF7czzF7r3dG4GANv0Sgw&callback=initMap"
+  async defer></script>
+  <script
+ src="https://code.jquery.com/jquery-3.2.1.min.js"
+ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+ crossorigin="anonymous">
+ </script>
+ <script src="../js/classie.js"></script>
+               <script type="text/javascript">
+               /* FUNCIONES DEL HEADER Y DEL CARUSEL*/
+               var carousel = $(".carousel"),
+                   currdeg  = 0;
+
+               $(".next").on("click", { d: "n" }, rotate);
+               $(".prev").on("click", { d: "p" }, rotate);
+
+               function rotate(e){
+                 if(e.data.d=="n"){
+                   currdeg = currdeg - 60;
+                 }
+                 if(e.data.d=="p"){
+                   currdeg = currdeg + 60;
+                 }
+                 carousel.css({
+                   "-webkit-transform": "rotateY("+currdeg+"deg)",
+                   "-moz-transform": "rotateY("+currdeg+"deg)",
+                   "-o-transform": "rotateY("+currdeg+"deg)",
+                   "transform": "rotateY("+currdeg+"deg)"
+                 });
+               }
+
+               function init() {
+                   window.addEventListener('scroll', function(e){
+                       var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                           shrinkOn = 300,
+                           header = document.querySelector(".header");
+                           console.log(header);
+                       if (distanceY > shrinkOn) {
+                           classie.add(header,"smaller");
+                       } else {
+                           if (classie.has(header,"smaller")) {
+                               classie.remove(header,"smaller");
+                           }
+                       }
+                   });
+               }
+               window.onload = init();
+               /* FUNCIONES DEL HEADER Y DEL CARUSEL*/
+
+          /* Google maps API*/
+          function initMap() {
+          var uluru = {lat: 18.139065, lng: -94.485201};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+   </script>
+</html>
