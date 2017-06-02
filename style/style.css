@@ -153,8 +153,7 @@ header.smaller div{
     background-color:#CD01CC;
 }
 .carusel{
-    padding-top: 20px;
-    margin-top: 207px;
+    margin-top: 50px;
     width: 100%;
     position: relative;
     height: 500px;
@@ -384,14 +383,9 @@ header.smaller div{
   padding-top: 10px;
 }
 
-.tittle-multi img{
-  height: 40%;
-  position: absolute;
-  left: 35%;
-  top: 152.5%;
-  z-index: 2;
-}
+
 .tittle-multi h1{
+  padding-left: 30px;
   margin: 0;
 }
 
@@ -703,4 +697,64 @@ label{
 }
 /*Fin del botton*/
 
+/*Responsive design*/
+@media screen and (max-width: 800px){
+  .inicio , .plan-de-estudios, .logo, .perfiles-academicos, .becas{
+    display: none;
+  }
+  .header{
+    height: 40px;
+    border-radius:0;
+  }
+  .background-foto{
+    background-size: auto;
+    max-height: 800px;
+    margin-bottom: 0;
+  }
+  .center{
+    text-align: center;
+    width: auto;
+    margin-top: 40px;
+  }
+  .main-image{
+    position: static;
+    height: 35%;
+    left: 0;
+  }
+  .center h3{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 27px;
+    width: auto;
+  }
+  .tittle-multi h1{
+    padding-left: 10px;
+    font-size: 40px;
+  }
+  .container{
+    padding-top: 0;
+  }
+  .next{
+    right: 7%;
+    top: 70%;
+  }
+  .prev{
+    left: 6%;
+    top: 70%;
+  }
+  .ing-text{
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+/**LUI'S CODE FOR RESPONSIVE DESIGN  BECAS*/
+  /*@media screen and (max-width:800px)*/
+
+
+
+
+/*Write code above this line*/
+
+/*------*----------**/
   /*Copyright (c) 2017 Copyright Digital Legwich.inc All Rights Reserved. */
