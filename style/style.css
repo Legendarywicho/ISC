@@ -774,11 +774,15 @@ form{
   top: 25%;
   font-size: 25px;
   margin-left: 30px;
-  color: white;
+  text-decoration: none;
 }
 
 .canvas-off ul li{
   padding-bottom: 20px;
+}
+
+.canvas-off ul li a {
+  color: white;
 }
 
 .canvas-off.active{
@@ -787,187 +791,7 @@ form{
 
 
 /*Responsive design*/
-@media screen and (max-width: 800px){
-  .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
-    display: none;
-  }
 
-  .logo{
-    width: 100%;
-    padding-right: 5px;
-  }
-  .header{
-    height: 40px;
-    border-radius:0;
-  }
-  .background-foto{
-    background-size: auto;
-    max-height: 800px;
-    margin-bottom: 0;
-  }
-  .center{
-    text-align: center;
-    width: auto;
-    margin-top: 40px;
-  }
-  .main-image{
-    position: static;
-    height: 35%;
-    left: 0;
-  }
-  .center h3{
-    font-size: 40px;
-    padding-top: 20px;
-    padding-left: 27px;
-    width: auto;
-  }
-  .tittle-multi h1{
-    padding-left: 10px;
-    font-size: 40px;
-  }
-  .container{
-    padding-top: 0;
-  }
-  .next{
-    right: 7%;
-    top: 70%;
-  }
-  .prev{
-    left: 6%;
-    top: 70%;
-  }
-  .ing-text{
-    text-align: center;
-    font-size: 30px;
-  }
-  .hamburger{
-    display: block !important;
-  }
-  .info{
-    height: auto;
-  }
-  .info-c{
-    display: block;
-    text-align: center;
-  }
-  .info-c img{
-    position: static;
-    left: 0;
-    margin-left: 40px;
-    height: 50%;
-    width: 50%;
-  }
-  .text-5 h3{
-    width: 100%;
-    padding-left: 0;
-    font-size: 35px;
-    text-align: center;
-  }
-  .text-5{
-    width: auto;
-    padding-left: 0;
-  }
-  .text-5 h4{
-    width: auto;
-    font-size: 25px;
-    padding-top: 0;
-    margin-right: 10px;
-  }
-  .perfil{
-    display: block;
-  }
-  .aspirante , .egresado{
-    width: auto;
-    height: 350px;
-    padding-top: 10px;
-    padding-left: 0;
-  }
-  .perfil h3{
-    font-size: 25px;
-  }
-
-  /*Formulario*/
-  .container-child {
-    margin-left: 20px;
-  }
-  .comments{
-    margin-left: 5px;
-  }
-
-  .comments label{
-    padding-top: 10px;
-    padding-bottom: 2px;
-  }
-  .know-carrer{
-    padding-left: 0;
-  }
-
-/*Footer**/
-
-.img{
-    display: none;
-}
-
-.social img{
-    padding-top:0px;
-    padding-left:0px;
-}
-
-.fot-info{
-  padding-left: 30px;
-}
-
-.footer div{
-  width: 70%;
-}
-
-.know{
-  margin-right: 20px;
-}
-.footer .tel h1{
-  font-size: 1.5em;
-}
-
-.footer .tel h3{
-  font-size: 1em;
-  width: 100%;
-  padding-right: 40px;
-}
-
-.footer .know h1{
-font-size: 1.5em;
-width: 110px;
-}
-
-.footer .know h3{
-font-size: 1em;
-}
-
-.footer .direct h1{
-font-size: 1.5em;
-}
-
-.footer .direct h3{
-font-size: 1em;
-width: 112px;
-}
-
-.social .twitter{
-  margin-top: 85%;
-  margin-bottom: 20px;
-  width: 40px;
-  height: 40px;
-}
-
-.social .facebook{
-  margin-top: auto;
-  width: 40px;
-  height: 40px;
-}
-.dropdown{
-  padding-right: 20px;
-}
-}
 /*IPAD RESOLUTION*/
 @media screen and (max-width: 921px){
   .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
@@ -1036,8 +860,8 @@ width: 112px;
     position: static;
     left: 0;
     margin-left: 40px;
-    height: 67%;
-    width: 50%;
+    height: 420px;
+    width: 400px;
   }
   .text-5 h3{
     width: 100%;
@@ -1151,9 +975,407 @@ width: 112px;
   padding-right: 20px;
 }
 
+/*Ipad becas**/
+.background-foto-2{
+  height: 520px;
 }
-/**LUI'S CODE FOR RESPONSIVE DESIGN  BECAS*/
-  /*@media screen and (max-width:800px)*/
+.title-becas{
+text-align: center;
+font-size: 40px;
+}
+
+.title-becas h1{
+height: 100px;
+left: 0%;
+}
+
+.title-becas h2{
+margin:0;
+width: 100%;
+padding:0;
+font-size: 40px !important;
+}
+
+.button-1{
+background:none
+}
+
+.info-becas{
+width: 100%;
+height: 900px;
+background-color: #F6F2F2;
+}
+
+.info-becas img{
+text-align: center;
+position: static;
+}
+
+.info-becas h1{
+margin-top: 0px;
+padding-top: 50px;
+margin-left: 20px;
+font-size: 40px;
+text-align: center;
+}
+
+.info-2{
+display:block;
+width: 90%;
+text-align: center;
+padding-top: 0px;
+}
+
+.text-1 h3 {
+text-align: center;
+padding-left: 90px;
+}
+
+.text-1 ul{
+text-align: justify;
+width: 80%;
+}
+
+.text-1{
+font-size: 20px;
+width: 100%;
+text-align: center;
+}
+
+.text-1 li{
+padding-top: 30px;
+font-size: 18px;
+}
+
+.button{
+background:none;
+}
+
+.container-child{
+margin-left: 20px;
+}
+
+.container-s h4{
+  text-align: justify !important;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+/*Contacts form*/
+#map{
+  margin-top: 20px;
+}
+
+/*Plan de estudios*/
+
+.background-foto-3{
+  height: 520px;
+}
+.title-studios{
+  font-size: 40px;
+}
+.lol{
+  display: none;
+}
+
+.container-plan{
+  display: flex;
+}
+.first-row-plan , .second-row-plan{
+  left: 0;
+  margin: 10px;
+}
+}
+
+
+
+@media screen and (max-width: 800px){
+
+  .background-foto-3{
+    height: 520px;
+  }
+  .title-studios{
+    font-size: 40px;
+  }
+  .lol{
+    display: none;
+  }
+
+  .container-plan{
+    display: block;
+  }
+  .first-row-plan , .second-row-plan{
+    left: 16%;
+    margin: 10px;
+  }
+
+    .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
+      display: none;
+    }
+    .logo{
+      width: 100%;
+      padding-right: 5px;
+    }
+    .header{
+      height: 40px;
+      border-radius:0;
+    }
+    .background-foto{
+      background-size: auto;
+      max-height: 800px;
+      margin-bottom: 0;
+    }
+    .center{
+      text-align: center;
+      width: auto;
+      margin-top: 40px;
+    }
+    .main-image{
+      position: static;
+      height: 35%;
+      left: 0;
+    }
+    .center h3{
+      font-size: 40px;
+      padding-top: 20px;
+      padding-left: 27px;
+      width: auto;
+    }
+    .tittle-multi h1{
+      padding-left: 10px;
+      font-size: 40px;
+    }
+    .container{
+      padding-top: 0;
+    }
+    .next{
+      right: 7%;
+      top: 70%;
+    }
+    .prev{
+      left: 6%;
+      top: 70%;
+    }
+    .ing-text{
+      text-align: center;
+      font-size: 30px;
+    }
+    .hamburger{
+      display: block !important;
+    }
+    .info{
+      height: auto;
+    }
+    .info-c{
+      display: block;
+      text-align: center;
+    }
+    .info-c img{
+      position: static;
+      left: 0;
+      margin-left: 40px;
+      height: 420px;
+      width: 400px;
+    }
+    .text-5 h3{
+      width: 100%;
+      padding-left: 0;
+      font-size: 35px;
+      text-align: center;
+    }
+    .text-5{
+      width: auto;
+      padding-left: 0;
+    }
+    .text-5 h4{
+      width: auto;
+      font-size: 25px;
+      padding-top: 0;
+      margin-right: 10px;
+    }
+    .perfil{
+      display: block;
+    }
+    .aspirante , .egresado{
+      width: auto;
+      height: 350px;
+      padding-top: 10px;
+      padding-left: 0;
+    }
+    .perfil h3{
+      font-size: 25px;
+    }
+
+    /*Formulario*/
+    .container-child {
+      margin-left: 20px;
+    }
+    .comments{
+      margin-left: 5px;
+    }
+
+    .comments label{
+      padding-top: 10px;
+      padding-bottom: 2px;
+    }
+    .know-carrer{
+      padding-left: 0;
+    }
+
+  /*Footer**/
+
+  .img{
+      display: none;
+  }
+
+  .social img{
+      padding-top:0px;
+      padding-left:0px;
+  }
+
+  .fot-info{
+    padding-left: 30px;
+  }
+
+  .footer div{
+    width: 70%;
+  }
+
+  .know{
+    margin-right: 20px;
+  }
+  .footer .tel h1{
+    font-size: 1.5em;
+  }
+
+  .footer .tel h3{
+    font-size: 1em;
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .footer .know h1{
+  font-size: 1.5em;
+  width: 110px;
+  }
+
+  .footer .know h3{
+  font-size: 1em;
+  }
+
+  .footer .direct h1{
+  font-size: 1.5em;
+  }
+
+  .footer .direct h3{
+  font-size: 1em;
+  width: 112px;
+  }
+
+  .social .twitter{
+    margin-top: 85%;
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .social .facebook{
+    margin-top: auto;
+    width: 40px;
+    height: 40px;
+  }
+  .dropdown{
+    padding-right: 20px;
+  }
+
+/**LUIS'S CODE FOR RESPONSIVE DESIGN  BECAS*/
+.background-foto-2{
+  height: 520px;
+}
+.title-becas{
+text-align: center;
+font-size: 40px;
+}
+
+.title-becas h1{
+height: 100px;
+left: 0%;
+}
+
+.title-becas h2{
+margin:0;
+width: 100%;
+padding:0;
+font-size: 40px !important;
+}
+
+.button-1{
+background:none
+}
+
+.info-becas{
+width: 100%;
+height: 900px;
+background-color: #F6F2F2;
+}
+
+.info-becas img{
+text-align: center;
+position: static;
+}
+
+.info-becas h1{
+margin-top: 0px;
+padding-top: 50px;
+margin-left: 40px;
+font-size: 40px;
+text-align: center;
+}
+
+.info-2{
+display:block;
+padding-top: 0px;
+}
+
+.text-1 h3 {
+text-align: center;
+}
+
+.text-1 ul{
+text-align: justify;
+
+width: 80%;
+}
+
+.text-1{
+font-size: 20px;
+width: 100%;
+}
+
+.text-1 li{
+padding-top: 30px;
+font-size: 18px;
+}
+
+.button{
+background:none;
+}
+
+.container-child{
+margin-left: 20px;
+}
+
+.container-s h4{
+  text-align: justify !important;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+/*Contacts form*/
+#map{
+  margin-top: 20px;
+}
+}
+
+
 
 
 

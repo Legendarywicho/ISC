@@ -5,10 +5,36 @@
         <meta charset="UTF-8">
         <title>Ing en software </title>
         <link rel="stylesheet" type="text/css" href="../style/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+				<meta name="viewport" content="width=720,maximum-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
+		<div class="canvas-off" id="canvas-off">
+			<ul>
+				<li>
+					<a href="../index.html">
+						Inicio
+					</a>
+				</li>
+				<li>
+					<a href="Becas.html">
+						Becas
+					</a>
+				</li>
+				<li>
+					<a href="contacto.html">
+						Contacto
+					</a>
+				</li>
+				<li>
+					<a href="plan-de-estudios.html">
+						Plan de estudios
+					</a>
+				</li>
+			</ul>
+		</div>
 	  <div class="background-foto-2">
+			<div class="icon-menu hamburger" id="button-ham"></div>
                 <header class="header">
                     <div class="inicio">
                         <div class="text-1">
@@ -26,7 +52,7 @@
                     </div>
                     <div class="logo">
                         <div class="background-logo">
-                            <img src="images/istmo.png" alt="Logo de la escuela" width="120" height="120">
+                            <img src="../images/istmo.png" alt="Logo de la escuela" width="120" height="120">
                         </div>
                     </div>
                     <div class="perfiles-academicos">
@@ -169,30 +195,9 @@
 	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	  crossorigin="anonymous">
   	</script>
-	  <script src="classie.js"></script>
+	  <script src="../js/classie.js"></script>
 									<script type="text/javascript">
 									/* FUNCIONES DEL HEADER Y DEL CARUSEL*/
-						      var carousel = $(".carousel"),
-						          currdeg  = 0;
-
-						      $(".next").on("click", { d: "n" }, rotate);
-						      $(".prev").on("click", { d: "p" }, rotate);
-
-						      function rotate(e){
-						        if(e.data.d=="n"){
-						          currdeg = currdeg - 60;
-						        }
-						        if(e.data.d=="p"){
-						          currdeg = currdeg + 60;
-						        }
-						        carousel.css({
-						          "-webkit-transform": "rotateY("+currdeg+"deg)",
-						          "-moz-transform": "rotateY("+currdeg+"deg)",
-						          "-o-transform": "rotateY("+currdeg+"deg)",
-						          "transform": "rotateY("+currdeg+"deg)"
-						        });
-						      }
-
 						      function init() {
 						          window.addEventListener('scroll', function(e){
 						              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -210,6 +215,14 @@
 						      }
 						      window.onload = init();
 									/* FUNCIONES DEL HEADER Y DEL CARUSEL*/
+									/*Hamburger Menu*/
+									var menu = document.getElementById("canvas-off");
+									var button = document.getElementById("button-ham")
+									console.log(menu);
+									console.log(button);
+									button.addEventListener("click",function(){
+											menu.classList.toggle("active");
+									});
       </script>
 </body>
 </html>
