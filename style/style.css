@@ -771,7 +771,7 @@ form{
 }
 .canvas-off ul{
   position: relative;
-  top: 25%;
+  top: 200px;
   font-size: 25px;
   margin-left: 30px;
   text-decoration: none;
@@ -794,6 +794,7 @@ form{
 
 /*IPAD RESOLUTION*/
 @media screen and (max-width: 921px){
+
   .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
     display: none;
   }
@@ -1077,13 +1078,13 @@ margin-left: 20px;
   display: none;
 }
 
-.container-plan{
-  display: flex;
-}
-.first-row-plan , .second-row-plan{
-  left: 0;
-  margin: 10px;
-}
+  .container-plan{
+    display: flex;
+  }
+  .first-row-plan , .second-row-plan{
+    left: 0;
+    margin: 10px;
+  }
 }
 
 
@@ -1210,7 +1211,7 @@ margin-left: 20px;
       margin-left: 20px;
     }
     .comments{
-      margin-left: 5px;
+      margin-left: 70px;
     }
 
     .comments label{
