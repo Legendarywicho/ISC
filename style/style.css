@@ -1,3 +1,9 @@
+
+/*Using local font*/
+  @@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Thin.ttf");
+  }
 body{
     margin:0;
      overflow-x: hidden;
@@ -696,11 +702,99 @@ label{
     background-color: #3e8e41;
 }
 /*Fin del botton*/
+/*Hamburger Menu for Reponsive design*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?zh3sgs');
+  src:  url('../fonts/icomoon.eot?zh3sgs#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?zh3sgs') format('truetype'),
+    url('../fonts/icomoon.woff?zh3sgs') format('woff'),
+    url('../fonts/icomoon.svg?zh3sgs#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu{
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+.hamburger{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  line-height: 40px;
+  color: white;
+  z-index: 999999;
+  margin-left: 20px;
+  margin-top: 15px;
+  border-radius: 50%;
+  background-color: rgba(55,46,35,.8);
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+form{
+  margin-bottom: 0;
+}
+/**Canvas menu*/
+.canvas-off{
+  position: fixed;
+  width: 270px;
+  z-index: 999999;
+  background: #4527A0;
+  opacity: .8;
+  top: 0;
+  left: -100%;
+  transition: .6s;
+  bottom: 0;
+}
+.canvas-off ul{
+  position: relative;
+  top: 25%;
+  font-size: 25px;
+  margin-left: 30px;
+  color: white;
+}
+
+.canvas-off ul li{
+  padding-bottom: 20px;
+}
+
+.canvas-off.active{
+  left:0;
+}
+
 
 /*Responsive design*/
 @media screen and (max-width: 800px){
-  .inicio , .plan-de-estudios, .logo, .perfiles-academicos, .becas{
+  .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
     display: none;
+  }
+
+  .logo{
+    width: 100%;
+    padding-right: 5px;
   }
   .header{
     height: 40px;
@@ -746,8 +840,133 @@ label{
     text-align: center;
     font-size: 30px;
   }
+  .hamburger{
+    display: block !important;
+  }
+  .info{
+    height: auto;
+  }
+  .info-c{
+    display: block;
+    text-align: center;
+  }
+  .info-c img{
+    position: static;
+    left: 0;
+    margin-left: 40px;
+    height: 50%;
+    width: 50%;
+  }
+  .text-5 h3{
+    width: 100%;
+    padding-left: 0;
+    font-size: 35px;
+    text-align: center;
+  }
+  .text-5{
+    width: auto;
+    padding-left: 0;
+  }
+  .text-5 h4{
+    width: auto;
+    font-size: 25px;
+    padding-top: 0;
+    margin-right: 10px;
+  }
+  .perfil{
+    display: block;
+  }
+  .aspirante , .egresado{
+    width: auto;
+    height: 350px;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+  .perfil h3{
+    font-size: 25px;
+  }
+
+  /*Formulario*/
+  .container-child {
+    margin-left: 20px;
+  }
+  .comments{
+    margin-left: 5px;
+  }
+
+  .comments label{
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+  .know-carrer{
+    padding-left: 0;
+  }
+
+/*Footer**/
+
+.img{
+    display: none;
 }
 
+.social img{
+    padding-top:0px;
+    padding-left:0px;
+}
+
+.fot-info{
+  padding-left: 30px;
+}
+
+.footer div{
+  width: 70%;
+}
+
+.know{
+  margin-right: 20px;
+}
+.footer .tel h1{
+  font-size: 1.5em;
+}
+
+.footer .tel h3{
+  font-size: 1em;
+  width: 100%;
+  padding-right: 40px;
+}
+
+.footer .know h1{
+font-size: 1.5em;
+width: 110px;
+}
+
+.footer .know h3{
+font-size: 1em;
+}
+
+.footer .direct h1{
+font-size: 1.5em;
+}
+
+.footer .direct h3{
+font-size: 1em;
+width: 112px;
+}
+
+.social .twitter{
+  margin-top: 85%;
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.social .facebook{
+  margin-top: auto;
+  width: 40px;
+  height: 40px;
+}
+.dropdown{
+  padding-right: 20px;
+}
 /**LUI'S CODE FOR RESPONSIVE DESIGN  BECAS*/
   /*@media screen and (max-width:800px)*/
 
