@@ -967,6 +967,191 @@ width: 112px;
 .dropdown{
   padding-right: 20px;
 }
+}
+/*IPAD RESOLUTION*/
+@media screen and (max-width: 921px){
+  .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
+    display: none;
+  }
+
+  .logo{
+    width: 100%;
+    padding-right: 5px;
+  }
+  .header{
+    height: 40px;
+    border-radius:0;
+  }
+  .background-foto{
+    background-size: auto;
+    max-height: 800px;
+    margin-bottom: 0;
+  }
+  .center{
+    text-align: center;
+    width: auto;
+    margin-top: 40px;
+  }
+  .main-image{
+    position: static;
+    height: 35%;
+    left: 0;
+  }
+  .center h3{
+    font-size: 45px;
+    padding-top: 20px;
+    padding-left: 27px;
+    width: auto;
+  }
+  .tittle-multi h1{
+    padding-left: 10px;
+    font-size: 40px;
+  }
+  .container{
+    padding-top: 0;
+  }
+  .next{
+    right: 7%;
+    top: 70%;
+  }
+  .prev{
+    left: 7%;
+    top: 70%;
+  }
+  .ing-text{
+    text-align: center;
+    font-size: 30px;
+  }
+  .hamburger{
+    display: block !important;
+  }
+  .info{
+    height: auto;
+  }
+  .info-c{
+    display: block;
+    text-align: center;
+  }
+  .info-c img{
+    position: static;
+    left: 0;
+    margin-left: 40px;
+    height: 67%;
+    width: 50%;
+  }
+  .text-5 h3{
+    width: 100%;
+    padding-left: 0;
+    font-size: 35px;
+    text-align: center;
+  }
+  .text-5{
+    width: auto;
+    padding-left: 0;
+  }
+  .text-5 h4{
+    width: auto;
+    font-size: 25px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-right: 10px;
+  }
+  .perfil{
+    display: block;
+  }
+  .aspirante , .egresado{
+    width: auto;
+    height: 350px;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+  .perfil h3{
+    font-size: 25px;
+  }
+
+  /*Formulario*/
+  .container-child {
+    margin-left: 20px;
+  }
+  .comments{
+    margin-left: 100px;
+  }
+
+  .comments label{
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+  .know-carrer{
+    padding-left: 0;
+  }
+
+/*Footer**/
+
+.img{
+    display: none;
+}
+
+.social img{
+    padding-top:0px;
+    padding-left:0px;
+}
+
+.fot-info{
+  padding-left: 30px;
+}
+
+.footer div{
+  width: 70%;
+}
+
+.know{
+  margin-right: 20px;
+}
+.footer .tel h1{
+  font-size: 1.5em;
+}
+
+.footer .tel h3{
+  font-size: 1em;
+  width: 100%;
+  padding-right: 40px;
+}
+
+.footer .know h1{
+font-size: 1.5em;
+width: 110px;
+}
+
+.footer .know h3{
+font-size: 1em;
+}
+
+.footer .direct h1{
+font-size: 1.5em;
+}
+
+.footer .direct h3{
+font-size: 1em;
+width: 112px;
+}
+
+.social .twitter{
+  margin-top: 85%;
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.social .facebook{
+  margin-top: auto;
+  width: 40px;
+  height: 40px;
+}
+.dropdown{
+  padding-right: 20px;
+}
+
+}
 /**LUI'S CODE FOR RESPONSIVE DESIGN  BECAS*/
   /*@media screen and (max-width:800px)*/
 
