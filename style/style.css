@@ -1426,7 +1426,9 @@ margin-left: 20px;
     padding: 0;
   }
   .comments textarea{
-
+    width: 300px;
+    border: 1px solid purple;
+    margin-right: 4px;
   }
   .comments input{
     margin: 0;
@@ -1450,6 +1452,29 @@ margin-left: 20px;
   }
   .squares{
     height: 850px;
+  }
+  .container-plan{
+    margin-left: -40px;
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .first-row-plan, .second-row-plan{
+    width: 100%;
+    text-align: center;
+  }
+  .background-foto-3{
+    height: 420px;
+    margin-bottom: 0;
+  }
+  .title-studios{
+    padding-top: 20px;
+    font-size: 30px;
+    margin: 0;
+  }
+  .dropdown{
+    margin-left: -20px;
   }
 }
 
