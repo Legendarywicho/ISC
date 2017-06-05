@@ -9,6 +9,11 @@ body{
      overflow-x: hidden;
      font-family: 'Roboto', sans-serif;
 }
+.submit-button{
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
 .general{
   overflow-x: hidden;
 }
@@ -650,10 +655,12 @@ label{
   margin: auto;
 }
 .button-2{
-  margin-left: 100px;
   margin-top: 5px;
+  margin-bottom: 60px;
   border: none !important;
-  width: 80px;
+  color: white;
+  background: purple;
+  width: 100px;
 }
 /*--------------------s*/
 /*Seccion de contactos*/
@@ -1379,13 +1386,72 @@ margin-left: 20px;
   margin-top: 20px;
 }
 }
-
-
-
-
-
-
 /*Write code above this line*/
+
+/*MOBILE PHONE*/
+
+@media screen and (max-width:600px){
+
+  .background-foto{
+    max-height: 650px;
+  }
+  .center img {
+    height: 200px;
+  }
+
+  .center h3{
+    margin: 0;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .know-carrer{
+    width: 100%;
+    text-align: center;
+  }
+  .tittle-multi, .carusel{
+    display: none;
+  }
+  .test-container{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .container-child{
+    margin-bottom: 0;
+  }
+  .comments{
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .comments textarea{
+
+  }
+  .comments input{
+    margin: 0;
+  }
+  .fot-info{
+    width: 60%;
+    padding-left:5px;
+  }
+  .know{
+    margin-right: 10px;
+  }
+  .footer .direct{
+    width: 270px;
+  }
+  /*Seccion the becas*/
+  .background-foto-2{
+    height: 500px;
+  }
+  .container-s{
+    display: block;
+  }
+  .squares{
+    height: 850px;
+  }
+}
 
 /*------*----------**/
   /*Copyright (c) 2017 Copyright Digital Legwich.inc All Rights Reserved. */
