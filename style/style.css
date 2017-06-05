@@ -17,6 +17,10 @@ body{
 .general{
   overflow-x: hidden;
 }
+
+.first-row-plan ul li , .second-row-plan ul li{
+  text-align: left;
+}
 .header{
     margin: 0 auto;
     max-width: 100%;
