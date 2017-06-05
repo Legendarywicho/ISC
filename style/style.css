@@ -10,7 +10,7 @@ body{
      font-family: 'Roboto', sans-serif;
 }
 .submit-button{
-  width: 500px;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -376,7 +376,7 @@ header.smaller div{
 
 .social img{
     padding-top: 15px;
-    display: block !important;
+    display: block;
     padding-bottom: 5px;
     padding-left: 50px;
     transition: all 0.5s;
@@ -1475,6 +1475,99 @@ margin-left: 20px;
   }
   .dropdown{
     margin-left: -20px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .center{
+    padding: 0;
+    width: 100%;
+    padding-top: 140px;
+}
+  .center h3{
+    font-size: 30px;
+  }
+  .info-c img{
+    height: 220px;
+    width: 200px;
+  }
+  .text-5 h4{
+    font-size: 20px;
+  }
+  .perfil h3{
+    margin-left: 20px;
+    width: 360px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .footer{
+    padding-top: 30px;
+    display: block;
+  }
+  .fot-info{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .footer div {
+    width: 100%;
+  }
+  .footer .know h1{
+    width: 100%;
+  }
+  .footer .direct{
+    width: 100%;
+  }
+  .footer .direct h3{
+    width: 100%;
+  }
+  .social .twitter{
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+  }
+  .social {
+    text-align: center;
+    margin-left: 10px;
+  }
+.social .facebook{
+    display: inline-block;
+  }
+  .dropdown{
+    margin: 10px 4px 90px 150px;
+  }
+
+  .title-studios{
+    padding-top: 50px;
+    font-size: 20px;
+  }
+  .background-foto-3{
+    height: 320px;
+  }
+  .text-plan{
+    font-size: 20px;
+  }
+  .container-plan{
+    margin-left: -90px;
+  }
+  .background-foto-2{
+    height: 320px;
+  }
+
+  .title-becas h1{
+     padding-top: 80px;
+      font-size: 40px;
+  }
+  .title-becas h2{
+    display: none;
+  }
+  .info-becas img{
+    height: 200px;
+    width: 200px;
+    margin-left: 80px;
+  }
+  .text-1 h3{
+    padding-left: 80px;
   }
 }
 
