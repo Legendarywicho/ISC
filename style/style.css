@@ -18,9 +18,6 @@ body{
   overflow-x: hidden;
 }
 
-.first-row-plan ul li , .second-row-plan ul li{
-  text-align: left;
-}
 .header{
     margin: 0 auto;
     max-width: 100%;
@@ -88,7 +85,7 @@ header.smaller div{
 
 
 .background-foto-3{
-  height: 860px;
+  height: 680px;
   max-width: 100%;
   background: url("../images/plan-de-estudios.png") no-repeat center;
   margin-bottom: 50px;
@@ -361,7 +358,9 @@ header.smaller div{
 .facebook:hover{
   opacity: .7;
 }
-
+.insta:hover{
+  opacity: .7;
+}
 .tittle-multi
 {
   width: 100%;
@@ -524,21 +523,21 @@ header.smaller div{
 }
 
 .first-row-plan{
-  width: 50%;
-  margin: 10px;
-  position: relative;
-  left: 10%;
+  width: 100%;
+  margin-left: 50px;
+}
+.first-row-plan ul{
+  margin-right: 50px;
 }
 
-.first-row-plan ul , .second-row-plan ul{
-  margin: 50px;
-  padding-top: 50px;
+.first-row-plan h3{
+  margin-left: 30px;
 }
-.second-row-plan{
-  width: 50%;
-  margin: 20px;
-  position: relative;
-  left:8%;
+.first, .second, .third{
+margin-left: 50px;
+width: 100%;
+text-align: left;
+display: flex;
 }
 
 .text-plan{
@@ -588,6 +587,7 @@ header.smaller div{
 }
 .test-container{
   display: flex;
+  margin: auto;
 }
 
 .container-form{
@@ -612,7 +612,7 @@ header.smaller div{
 }
 
  input{
-  width: 80%;
+  width: 50%;
   border: 1px solid purple;
   height: 40px;
 }
@@ -624,10 +624,6 @@ label{
 .comments{
   padding-top: 10px;
   margin-left: 90px;
-}
-.test-container{
-  width: 800px;
-  margin: auto;
 }
 .button-2{
   margin-top: 5px;
@@ -849,6 +845,9 @@ form{
 /*IPAD RESOLUTION*/
 @media screen and (max-width: 921px){
 
+  .first, .second, .third{
+    margin-left: 0;
+  }
   .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
     display: none;
   }
@@ -1100,6 +1099,9 @@ margin-left: 20px;
 
 @media screen and (max-width: 800px){
 
+  .container-plan{
+    font-size: 13px;
+  }
   .logo-school img{
     display: none;
   }
@@ -1396,9 +1398,10 @@ margin-left: 20px;
     height: 850px;
   }
   .container-plan{
-    margin-left: -40px;
+    margin-left: -10px;
     margin-right: 20px;
     width: 100%;
+    font-size: 12px;
     text-align: center;
   }
 
@@ -1462,8 +1465,13 @@ margin-left: 20px;
   .text-plan{
     font-size: 20px;
   }
-  .container-plan{
-    margin-left: -90px;
+  .first, .second, .third{
+    display: block;
+
+  }
+
+  .first div, .second div, .third div{
+    height: auto;
   }
   .background-foto-2{
     height: 320px;
