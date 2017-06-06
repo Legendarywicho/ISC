@@ -1413,6 +1413,9 @@ margin-left: 20px;
     height: 420px;
     margin-bottom: 0;
   }
+  .perfil h3{
+    width: auto;
+  }
   .title-studios{
     padding-top: 20px;
     font-size: 30px;
@@ -1451,7 +1454,7 @@ margin-left: 20px;
     margin-left: 20px;
   }
   .perfil h3{
-    width: 340px;
+    width: auto;
     font-size: 16px;
     text-align: justify;
   }
