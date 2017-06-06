@@ -89,25 +89,27 @@
         <section class="carusel"> <!-- Implement the beta carusel-->
         <div class="container">
             <div class="carousel">
-                <a href="https://www.youtube.com/watch?v=Ct6BUPvE2sM">
-                    <div class="item a"></div>
-                </a>
-                <a href="https://www.youtube.com/watch?v=Ct6BUPvE2sM">
-                    <div class="item b"></div>
-                </a>
-                <a href="https://www.youtube.com/watch?v=Ct6BUPvE2sM">
-                     <div class="item c"></div>
-                </a>
-                <a href="https://www.youtube.com/watch?v=Ct6BUPvE2sM">
-                    <div class="item d"></div>
-                </a>
-                <a href="https://www.youtube.com/watch?v=Ct6BUPvE2sM">
-                    <div class="item e"></div>
-                </a>
-                <a href="https://www.youtube.com/watch?v=Ct6BUPvE2sM">
-                    <div class="item f"></div>
-                </a>
+              <!--
+                    <div class="item a">
+                    <iframe width="260" height="200" src="https://www.youtube.com/embed/CSgjZdtiyPg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="item b">
+                    <iframe width="260" height="200" src="https://www.youtube.com/embed/a41Jvd2GtMQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <div class="item c">
+                       <iframe width="260" height="200" src="https://www.youtube.com/embed/kbdpi0N_J-g" frameborder="0" allowfullscreen></iframe>
+                     </div>
+                    <div class="item d">
+                      <iframe width="260" height="200" src="https://www.youtube.com/embed/oQt5uBDFOPw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="item e">
+                      <iframe width="260" height="200" src="https://www.youtube.com/embed/4Ho7Khj3vLw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="item f">
+                      <iframe width="260" height="200" src="https://www.youtube.com/embed/JvxIjWvewcs" frameborder="0" allowfullscreen></iframe>
+                    </div>
             </div>
+          -->
         </div>
         <div class="next">
             <!-- Forward icon by Icons8 -->
@@ -169,10 +171,6 @@
 								<input type="text" name="Correo Electronico" placeholder="Correo" id="correo">
 							</div>
 						</div>
-						<div class="comments">
-							<label for="Comentarios">Comentarios</label>
-							 <textarea name="Comentarios" id="Comentarios" rows="12" cols="50"></textarea>
-						</div>
 					</div>
           <div class="submit-button">
                 <input type="submit" name="enviar" class="button-2" id="button"/>
@@ -180,42 +178,53 @@
           </form>
 				</div>
         <footer class="footer">
-            <div class="img">
-                <img src="images/istmo.png" alt="Logo de la escuela" width="200" height="200">
-            </div>
-            <div class="fot-info">
-                <div class="tel">
-                    <h1>Telefono</h1>
-                    <h3>(921) 210-9590</h3>
-                </div>
-                <div class="know">
-                    <h1>Conocenos</h1>
-                    <h3>-Planes de estudios</h3>
-                    <h3>-Perfiles Academicos</h3>
-                    <h3>-Becas</h3>
-                </div>
-                <div class="direct">
-                    <h1>Dirección</h1>
-                    <h3>A.v universidad, kilometro 8.5 colonia santa celilia</h3>
-                    <h3>Coatzacoalcos, veracruz</h3>
-                    <h3>C.P 96520</h3>
-                </div>
-            </div>
-            <div class="social">
-                <a href="https://twitter.com/uistmoamericana?lang=es" target="_blank">
-                    <img src="images/twit.png" alt="Twitter" class="twitter">
-                </a>
-                <a href="https://www.facebook.com/Universidad-Istmo-Americana-153904661343430/" target="_blank">
-                    <img src="images/face.png" alt="Facebook" class="facebook">
-                </a>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Idioma</button>
-              <div class="dropdown-content">
-                <a href="#">Español</a>
-                <a href="english/index-english.html" id="a">English</a>
+            <div class="first-row">
+              <div class="logo-school">
+                  <img src="images/istmo.png" alt="Logo de la escuela" width="150px" height="150px">
               </div>
-          </div>
+              <div class="informacion-text">
+                  <div class="number-phone">
+                    <img src="images/phone.png" alt="Telefono" height="80" width="80">
+                      <div class="text-num">
+                          <h3>Lada sin costo</h3>
+                          <h3 id="phone-number">01 800 00 00 438</h3>
+                      </div>
+                  </div>
+              </div>
+              <h4>Síguenos:</h4>
+              <div class="social">
+                  <a href="https://twitter.com/uistmoamericana?lang=es" target="_blank">
+                      <img src="images/twit.png" alt="Twitter" class="twitter" height="50" width="50">
+                  </a>
+                  <a href="https://www.facebook.com/Universidad-Istmo-Americana-153904661343430/" target="_blank">
+                      <img src="images/face.png" alt="Facebook" class="facebook" height="50" width="50">
+                  </a>
+                  <a href="https://www.instagram.com/uistmoamericana/" target="_blank">
+                      <img src="images/insta.png" alt="Instagram" class="insta" height="50" width="50">
+                  </a>
+              </div>
+            </div>
+            <div class="second-row">
+              <div class="telephone-lo">
+                <ul>
+                  <h1>Telefono</h1>
+                  <li>(921 210-9590)</li>
+                </ul>
+              </div>
+              <div class="know">
+                <h1>Conocenos</h1>
+                <ul>
+                  <li>Planes de estudios</li>
+                  <li>Becas</li>
+                </ul>
+              </div>
+              <div class="direct">
+                <h1>Dirección</h1>
+                 <ul>
+                   <li>Contacto</li>
+                 </ul>
+              </div>
+            </div>
         </footer>
         <script
 	  src="https://code.jquery.com/jquery-3.2.1.min.js"
