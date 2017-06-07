@@ -1,0 +1,19 @@
+{
+  "name": "lol",
+  "version": "1.0.0",
+  "description": "University's computer science website made with html css and JS. link : https://legendarywicho.github.io/ISC/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Legendarywicho/ISC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Legendarywicho/ISC/issues"
+  },
+  "homepage": "https://github.com/Legendarywicho/ISC#readme"
+}
