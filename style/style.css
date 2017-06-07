@@ -9,6 +9,67 @@ body{
      overflow-x: hidden;
      font-family: 'Roboto', sans-serif;
 }
+.social-bar{
+  position: fixed;
+  left: 0;
+  top: 300px;
+  z-index: 2000;
+}
+.social-bar ul{
+  list-style: none;
+  padding-left: 0;
+}
+.social-bar ul li a{
+  display: inline-block;
+  color:#fff;
+  background-color: #000;
+  padding: 20px 20px;
+  text-decoration: none;
+  transition: all .5s;
+}
+.social-bar ul li a:hover{
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+/*Social bar**/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts-2/icomoon.eot?e2w9my');
+  src:  url('../fonts-2/icomoon.eot?e2w9my#iefix') format('embedded-opentype'),
+    url('../fonts-2/icomoon.ttf?e2w9my') format('truetype'),
+    url('../fonts-2/icomoon.woff?e2w9my') format('woff'),
+    url('../fonts-2/icomoon.svg?e2w9my#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-instagram:before {
+  content: "\e902";
+}
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-facebook:before {
+  content: "\e901";
+}
+
 .submit-button{
   width: 100%;
   margin: auto;
@@ -30,7 +91,7 @@ body{
     display: flex;
     width: 100%;
     height: 100px;
-    background:black;
+    background:#212121;
     padding-bottom: 40px;
 }
 .header h1{
@@ -111,7 +172,7 @@ header.smaller div{
     height: 47px;
     width: 20%;
     transition: all 0.3s;
-    background-color:#CD01CC;
+    background-color:#9C27B0;
 }
 
 .header h1 {
@@ -126,7 +187,7 @@ header.smaller div{
     height: 47px;
     transition: all 0.3s;
     width: 30%;
-    background-color: #FEF009;
+    background-color: #FFEB3B;
 }
 .background-logo{
     text-align: center;
@@ -135,37 +196,34 @@ header.smaller div{
     height: 94px;
     transition: all 0.3s;
     width: 170px;
-    background-color: black;
+    background-color: #212121;
 }
 .center{
     margin-top: 134px;
-    width: 100%;
-    padding:120px;
+    text-align: center;
+    padding-right: 0;
+    padding-top: 90px;
 }
 .center h3 {
-    font-size: 60px;
+    font-size: 50px;
     padding: 0;
     text-align: center;
-    width: 90%;
+    width: auto;
     margin-right: 20px;
     margin-top: 20px;
     color: white;
 }
 
-.main-image{
-    position: relative;
-    left: 29%
-}
 
 .perfiles-academicos{
     height: 47px;
     width: 30%;
-    background-color:#FEF009;
+    background-color:#FFEB3B;
 }
 .becas{
     height: 47px;
     width: 20%;
-    background-color:#CD01CC;
+    background-color:#9C27B0;
 }
 .carusel{
     margin-top: 50px;
@@ -295,13 +353,14 @@ header.smaller div{
 .text-5 h3{
     width: auto;
     font-size: 35px;
-    text-align: justify;
+    text-align: center;
 }
 
 
 .text-5 h4{
-    width: 90%;
+    width: auto;
     text-align: justify;
+    margin-right: 10px;
     padding-top: 10px;
     font-size: 30px;
 }
@@ -331,7 +390,7 @@ header.smaller div{
 .perfil h3{
     width: auto;
     text-align: justify;
-    font-size: 30px;
+    font-size: 25px;
     margin-left:  30px;
     margin-right: 25px;
     color: white;
@@ -391,28 +450,16 @@ header.smaller div{
 }
 
 .title-becas h1{
-  left: 17%;
-  position: relative;
-  padding: 20px;
-  padding-top: 30px;
+  padding-top: 120px;
+  text-align: center;
   margin-bottom: 0;
 }
 .title-becas h2{
   margin:0;
-  width: 900px;
+  text-align: center;
   padding: 20px;
   padding-top: 0;
   font-size: 70px !important;
-}
- .button-1{
-  height: 100px;
-  width: 100px;
-  margin-top: 70px;Ç
-  display: inline-block;
-  position: absolute;
-  left: 27%;
-  background: #FBCE3A;
-  border-radius: 500px;
 }
 .info-becas{
   width: 100%;
@@ -455,18 +502,6 @@ header.smaller div{
   font-size: 18px;
 }
 
-.button{
- height: 100px;
- width: 100px;
- margin-top: 70px;
- display: inline-block;
- position: absolute;
- left: 46%;
- bottom: -800px;
- background: #FBCE3A;
- border-radius: 500px;
-}
-
 .section-separator{
   height: 90px;
   width: 100%;
@@ -499,18 +534,9 @@ header.smaller div{
   color: white;
   margin-left: 20px;
   position: relative;
+  padding-top: 100px;
   top: 22%;
   text-align: center;
-}
-.lol{
-  top: 70%;
-  left: 48%;
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-  position: absolute;
-  background: #FBCE3A;
-  border-radius: 500px;
 }
 
 .container-plan{
@@ -794,9 +820,9 @@ footer h4{
   position: fixed;
   line-height: 40px;
   color: white;
+  top:20px;
   z-index: 999999;
   margin-left: 20px;
-  margin-top: 15px;
   border-radius: 50%;
   background-color: rgba(55,46,35,.8);
   text-align: center;
@@ -845,6 +871,9 @@ form{
 /*IPAD RESOLUTION*/
 @media screen and (max-width: 921px){
 
+  .social-bar{
+    display: none;
+  }
   .first, .second, .third{
     margin-left: 0;
   }
@@ -862,7 +891,7 @@ form{
   }
   .background-foto{
     background-size: auto;
-    max-height: 800px;
+    max-height: 720px;
     margin-bottom: 0;
   }
   .center{
@@ -878,8 +907,6 @@ form{
   .center h3{
     font-size: 45px;
     padding-top: 20px;
-    padding-left: 27px;
-    width: auto;
   }
   .tittle-multi h1{
     padding-left: 10px;
@@ -918,8 +945,9 @@ form{
     width: 400px;
   }
   .text-5 h3{
-    width: 100%;
+    width: auto;
     padding-left: 0;
+    padding-left: 5px;
     font-size: 35px;
     text-align: center;
   }
@@ -931,6 +959,7 @@ form{
     width: auto;
     font-size: 25px;
     padding-top: 0;
+    margin-left: 20px;
     padding-bottom: 20px;
     margin-right: 10px;
   }
@@ -1027,13 +1056,13 @@ padding-top: 0px;
 }
 
 .text-1 h3 {
-text-align: center;
+text-align: left;
 padding-left: 90px;
 }
 
 .text-1 ul{
-text-align: justify;
-width: 80%;
+width: 80%; 
+text-align: left;
 }
 
 .text-1{
@@ -1140,7 +1169,7 @@ margin-left: 20px;
     }
     .background-foto{
       background-size: auto;
-      max-height: 800px;
+      max-height: 720px;
       margin-bottom: 0;
     }
     .center{
@@ -1156,8 +1185,8 @@ margin-left: 20px;
     .center h3{
       font-size: 40px;
       padding-top: 20px;
-      padding-left: 27px;
       width: auto;
+
     }
     .tittle-multi h1{
       padding-left: 10px;
@@ -1196,10 +1225,7 @@ margin-left: 20px;
       width: 400px;
     }
     .text-5 h3{
-      width: 100%;
-      padding-left: 0;
       font-size: 35px;
-      text-align: center;
     }
     .text-5{
       width: auto;
@@ -1254,7 +1280,7 @@ margin-left: 20px;
 
 /**LUIS'S CODE FOR RESPONSIVE DESIGN  BECAS*/
 .background-foto-2{
-  height: 520px;
+  height: 400px;
 }
 .title-becas{
 text-align: center;
@@ -1306,8 +1332,7 @@ text-align: center;
 }
 
 .text-1 ul{
-text-align: justify;
-
+text-align: left;
 width: 80%;
 }
 
@@ -1491,9 +1516,7 @@ margin-left: 20px;
     width: 200px;
     margin-left: 80px;
   }
-  .text-1 h3{
-    padding-left: 80px;
-  }
+
 }
 
 /*------*----------**/
