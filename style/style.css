@@ -155,7 +155,7 @@ header.smaller div{
 .background-foto{
     height: 860px;
     max-width: 100%;
-    background: url("../images/background.jpg") no-repeat center;
+    background: url("../images/background.png") no-repeat center;
     margin-bottom: 50px;
     background-size: 100%;
 }
@@ -520,6 +520,7 @@ header.smaller div{
   display: flex;
 }
 .box-2 , .box-1{
+  width: 100%;
   font-size: 20px;
   padding-top: 20px;
   text-align: center;
@@ -1061,7 +1062,7 @@ padding-left: 90px;
 }
 
 .text-1 ul{
-width: 80%; 
+width: 80%;
 text-align: left;
 }
 
