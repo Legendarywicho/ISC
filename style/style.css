@@ -824,9 +824,13 @@ form{
   margin-bottom: 0;
 }
 /**Canvas menu*/
+.carl-lol1{
+  padding-top: 0 !important;
+  z-index: 99999 !important;
+}
 
-.side-nav{
-  padding-top: 65px !important;
+.general ul a img {
+  margin-top: 50px;
 }
 /*Responsive design*/
 
