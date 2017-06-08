@@ -826,7 +826,7 @@ form{
 /**Canvas menu*/
 
 .side-nav{
-  padding-top: 65px;
+  padding-top: 65px !important;
 }
 /*Responsive design*/
 
