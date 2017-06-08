@@ -123,7 +123,6 @@ body{
     transition: height 0.5s;
     display: flex;
     width: 100%;
-    height: 100px;
     background:#212121;
     padding-bottom: 40px;
 }
@@ -141,7 +140,6 @@ header img{
 }
 /* animation header*/
 header.smaller{
-    height: 25px;
     font-size: 10px;
     opacity: 0.9;
 }
@@ -158,8 +156,8 @@ header.smaller{
 
 header.smaller img{
   opacity: .9;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
 .background-logo.smaller{
   height: 60px;
@@ -393,7 +391,7 @@ header.smaller div{
     width: auto;
     text-align: justify;
     margin-right: 10px;
-    padding-top: 10px;
+    padding-top: 90px;
     font-size: 30px;
 }
 
@@ -812,7 +810,7 @@ footer h4{
   position: fixed;
   line-height: 40px;
   color: white;
-  top:20px;
+  top:10;
   z-index: 999999;
   margin-left: 20px;
   border-radius: 50%;
@@ -826,38 +824,10 @@ form{
   margin-bottom: 0;
 }
 /**Canvas menu*/
-.canvas-off{
-  position: fixed;
-  width: 270px;
-  z-index: 999999;
-  background: #4527A0;
-  opacity: .8;
-  top: 0;
-  left: -100%;
-  transition: .6s;
-  bottom: 0;
-}
-.canvas-off ul{
-  position: relative;
-  top: 200px;
-  font-size: 25px;
-  margin-left: 30px;
-  text-decoration: none;
-}
 
-.canvas-off ul li{
-  padding-bottom: 20px;
+.side-nav{
+  top: 66 !important;
 }
-
-.canvas-off ul li a {
-  color: white;
-}
-
-.canvas-off.active{
-  left:0;
-}
-
-
 /*Responsive design*/
 
 /*IPAD RESOLUTION*/
@@ -872,13 +842,12 @@ form{
   .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
     display: none;
   }
-
   .logo{
     width: 100%;
     padding-right: 5px;
   }
   .header{
-    height: 40px;
+    height: 65px;
     border-radius:0;
   }
   .background-foto{
@@ -1156,7 +1125,6 @@ margin-left: 20px;
       padding-right: 5px;
     }
     .header{
-      height: 40px;
       border-radius:0;
     }
     .background-foto{
