@@ -804,6 +804,15 @@ footer h4{
   content: "\e9bd";
 }
 
+.btn, .btn-large{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+#dropdown1{
+  left: 23px !important;
+  top: 530px !important;
+}
+
 .hamburger{
   width: 40px;
   height: 40px;
