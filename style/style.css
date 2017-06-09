@@ -9,11 +9,12 @@ body{
      overflow-x: hidden;
      font-family: 'Roboto', sans-serif;
 }
+
 .social-bar{
   position: fixed;
   left: 0;
-  top: 300px;
-  z-index: 2000;
+  top: 250px;
+  z-index: 1000;
 }
 .social-bar ul{
   list-style: none;
@@ -129,6 +130,9 @@ body{
 .header h1{
     font-size: 24px;
 }
+.ing-text h1{
+  font-size: 25px;
+}
 header div{
   transition: height 0.3s;
 }
@@ -206,6 +210,9 @@ header.smaller div{
     background-color:#9C27B0;
 }
 
+.form{
+  width: 100%;
+}
 .header h1 {
     transition: .5s;
     cursor: pointer;
@@ -482,6 +489,7 @@ header.smaller div{
 .title-becas h1{
   padding-top: 120px;
   text-align: center;
+  font-size: 120px;
   margin-bottom: 0;
 }
 .title-becas h2{
@@ -660,7 +668,9 @@ display: flex;
   height: 30px;
   border-bottom: 1px solid black;
 }
-
+.know-carrer h2{
+  font-size: 20px !important;
+}
 .container-child{
   height: 300px;
   width: 100%;
@@ -669,7 +679,8 @@ display: flex;
 }
 
  input{
-  width: 50%;
+  margin-top: 20px !important;
+  width: 50% !important;
   border: 1px solid purple;
   height: 40px;
 }
@@ -845,10 +856,6 @@ form{
 
 /*IPAD RESOLUTION*/
 @media screen and (max-width: 921px){
-
-  .social-bar{
-    display: none;
-  }
   .first, .second, .third{
     margin-left: 0;
   }
@@ -889,14 +896,7 @@ form{
   .container{
     padding-top: 0;
   }
-  .next{
-    right: 7%;
-    top: 70%;
-  }
-  .prev{
-    left: 7%;
-    top: 70%;
-  }
+
   .ing-text{
     text-align: center;
     font-size: 30px;
@@ -988,7 +988,6 @@ font-size: 40px;
 }
 
 .title-becas h1{
-height: 100px;
 left: 0%;
 }
 
@@ -1030,7 +1029,7 @@ padding-top: 0px;
 }
 
 .text-1 h3 {
-text-align: left;
+text-align: center;
 padding-left: 90px;
 }
 
@@ -1168,14 +1167,6 @@ margin-left: 20px;
     .container{
       padding-top: 0;
     }
-    .next{
-      right: 7%;
-      top: 70%;
-    }
-    .prev{
-      left: 6%;
-      top: 70%;
-    }
     .ing-text{
       text-align: center;
       font-size: 30px;
@@ -1194,8 +1185,8 @@ margin-left: 20px;
       position: static;
       left: 0;
       margin-left: 40px;
-      height: 420px;
-      width: 400px;
+      height: 500px;
+      width: 350px;
     }
     .text-5 h3{
       font-size: 35px;
@@ -1215,7 +1206,7 @@ margin-left: 20px;
     }
     .aspirante , .egresado{
       width: auto;
-      height: 350px;
+      height: 300px;
       padding-top: 10px;
       padding-left: 0;
     }
@@ -1441,8 +1432,8 @@ margin-left: 20px;
     font-size: 30px;
   }
   .info-c img{
-    height: 220px;
-    width: 200px;
+    height: 320px;
+    width: 210px;
     margin: 0;
   }
   .text-5 h3{
@@ -1454,6 +1445,8 @@ margin-left: 20px;
   }
   .perfil h3{
     font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
     text-align: justify;
   }
   .title-studios{
