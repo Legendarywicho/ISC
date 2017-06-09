@@ -15,31 +15,34 @@
     </head>
     <body>
       <div class="general">
-              <div class="canvas-off" id="canvas-off">
-                <ul>
-                  <li>
-                    <a href="../index.html">
-                      Inicio
-                    </a>
-                  </li>
-                  <li>
-                    <a href="plan-de-estudios.html">
-                      Plan de estudios
-                    </a>
-                  </li>
-                  <li>
-                    <a href="Becas.html">
-                      Becas
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contacto.html">
-                      Contacto
-                    </a>
-                  </li>
-                </ul>
+          <ul id="slide-out" class="side-nav carl-lol1">
+              <li><div class="userView">
+              <div class="background">
+                <img src="../images/testing.png">
               </div>
-              <div class="icon-menu hamburger" id="button-ham"></div>
+              <a href="#!user"><img class="circle img-nav" src="../images/istmo.png"></a>
+              <a href="#!name"><span class="white-text name">Istmo Americana</span></a>
+              <a href="#!email"><span class="white-text email">921-123-4563</span></a>
+              </div></li>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="plan-de-estudios.html">Plan de estudios</a></li>
+              <li><a href="Becas.html">Becas</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><div class="divider"></div></li>
+              <li><a class="subheader">En construccion:</a></li>
+              <li><a class="waves-effect" href="#!">Investigacion</a></li>
+              <li><a class="waves-effect" href="#!">Tutorias</a></li>
+
+              <a class='dropdown-button btn btn-nav' href='#' data-activates='dropdown1'>Idioma</a>
+                  <!-- Dropdown Structure -->
+                  <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="#!">Español</a></li>
+                  <li><a href="#!">Inglés</a></li>
+                  </ul>
+              </ul>
+              <a href="#" data-activates="slide-out" class="button-collapse">
+                  <div class="icon-menu hamburger" id="button-ham"></div>
+              </a>
               <div class="social-bar">
                   <ul>
                     <li>
@@ -173,75 +176,48 @@
             </div>
         </footer>
     </div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMB-4Xr4k2SlUF7czzF7r3dG4GANv0Sgw&callback=initMap"
-  async defer></script>
-  <script
- src="https://code.jquery.com/jquery-3.2.1.min.js"
- integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
- crossorigin="anonymous">
- </script>
- <script src="../js/classie.js"></script>
-               <script type="text/javascript">
-               /* FUNCIONES DEL HEADER Y DEL CARUSEL*/
-               var carousel = $(".carousel"),
-                   currdeg  = 0;
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+    </script>
+    <script src="../js/classie.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+    function init() {
+      window.addEventListener('scroll', function(e){
+          var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+              shrinkOn = 300,
+              header = document.querySelector(".header");
+              header2 = document.querySelector(".center-image");
+              console.log(header);
+              console.log(header2);
+          if (distanceY > shrinkOn) {
+              classie.add(header,"smaller");
+              classie.add(header2,"smaller");
+          } else {
+              if (classie.has(header,"smaller")) {
+                  classie.remove(header,"smaller");
+                  classie.remove(header2,"smaller");
+              }
+          }
+      });
+    }
+    window.onload = init();
 
-               $(".next").on("click", { d: "n" }, rotate);
-               $(".prev").on("click", { d: "p" }, rotate);
-
-               function rotate(e){
-                 if(e.data.d=="n"){
-                   currdeg = currdeg - 60;
-                 }
-                 if(e.data.d=="p"){
-                   currdeg = currdeg + 60;
-                 }
-                 carousel.css({
-                   "-webkit-transform": "rotateY("+currdeg+"deg)",
-                   "-moz-transform": "rotateY("+currdeg+"deg)",
-                   "-o-transform": "rotateY("+currdeg+"deg)",
-                   "transform": "rotateY("+currdeg+"deg)"
-                 });
-               }
-
-               function init() {
-                   window.addEventListener('scroll', function(e){
-                       var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                           shrinkOn = 300,
-                           header = document.querySelector(".header");
-                           console.log(header);
-                       if (distanceY > shrinkOn) {
-                           classie.add(header,"smaller");
-                       } else {
-                           if (classie.has(header,"smaller")) {
-                               classie.remove(header,"smaller");
-                           }
-                       }
-                   });
-               }
-               window.onload = init();
-               /* FUNCIONES DEL HEADER Y DEL CARUSEL*/
-
-          /* Google maps API*/
-          function initMap() {
-          var uluru = {lat: 18.139065, lng: -94.485201};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: uluru
-          });
-          var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-          });
-        }
-        /*Hamburger Menu*/
-        var menu = document.getElementById("canvas-off");
-        var button = document.getElementById("button-ham")
-        console.log(menu);
-        console.log(button);
-        button.addEventListener("click",function(){
-            menu.classList.toggle("active");
-        });
-   </script>
+    /**Nav bar*/
+    $(".button-collapse").sideNav();
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    //$('.collapsible').collapsible();
+    $('.button-collapse').sideNav({
+    menuWidth: 260, // Default is 300
+    edge: 'left', // Choose the horizontal origin
+    closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    draggable: true // Choose whether you can drag to open on touch screens
+    }
+    );
+    </script>
    </body>
 </html>

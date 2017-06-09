@@ -10,6 +10,10 @@ body{
      font-family: 'Roboto', sans-serif;
 }
 
+.lider-1{
+   background: url("../images/slider-1.png") !important;
+}
+
 .social-bar{
   position: fixed;
   left: 0;
@@ -131,7 +135,7 @@ body{
     font-size: 24px;
 }
 .ing-text h1{
-  font-size: 25px;
+  font-size: 35px;
 }
 header div{
   transition: height 0.3s;
@@ -159,6 +163,7 @@ header.smaller{
 }
 
 header.smaller img{
+  margin-top: 10px;
   opacity: .9;
   height: 50px;
   width: 50px;
@@ -524,10 +529,9 @@ header.smaller div{
 }
 
 .text-1 ul{
-  text-align: justify;
   position: relative;
   left:10%;
-  width: 80%;
+  width: 100%;
 }
 
 .text-1{
@@ -589,14 +593,10 @@ header.smaller div{
 
 .first-row-plan{
   width: 100%;
-  margin-left: 50px;
+
 }
 .first-row-plan ul{
   margin-right: 50px;
-}
-
-.first-row-plan h3{
-  margin-left: 30px;
 }
 .first, .second, .third{
 margin-left: 50px;
@@ -833,6 +833,7 @@ footer h4{
   top:10;
   z-index: 1000;
   margin-left: 20px;
+  margin-top: 10px;
   border-radius: 50%;
   background-color: rgba(55,46,35,.8);
   text-align: center;
@@ -1104,6 +1105,9 @@ margin-left: 20px;
   .container-plan{
     font-size: 13px;
   }
+  .carusel{
+    height: auto;
+  }
   .logo-school img{
     display: none;
   }
@@ -1252,7 +1256,6 @@ font-size: 40px;
 }
 
 .title-becas h1{
-height: 100px;
 left: 0%;
 }
 
@@ -1297,7 +1300,7 @@ text-align: center;
 
 .text-1 ul{
 text-align: left;
-width: 80%;
+width: 100%;
 }
 
 .text-1{
@@ -1334,10 +1337,24 @@ margin-left: 20px;
 
 @media screen and (max-width:600px){
 
+
+  .text-1 h3{
+    padding-left: 50px;
+  }
   .box-2, .box-1{
     width: auto;
   }
+  .title-studios h1{
+    font-size: 40px;
+    margin-top: 20px
+  }
+  .general h1 {
+    font-size: 40px;
+  }
 
+  .general h3{
+    font-size: 35px;
+  }
   .number-phone{
     display: none;
   }
@@ -1368,8 +1385,8 @@ margin-left: 20px;
     width: 100%;
     text-align: center;
   }
-  .tittle-multi, .carusel{
-    display: none;
+  .tittle-multi{
+    margin-top: 20px;
   }
   .test-container{
     width: 100%;
@@ -1399,6 +1416,7 @@ margin-left: 20px;
   }
 
   .first-row-plan, .second-row-plan{
+    margin-left: 20px;
     width: 100%;
     text-align: center;
   }
@@ -1413,6 +1431,13 @@ margin-left: 20px;
     padding-top: 20px;
     font-size: 30px;
     margin: 0;
+  }
+
+  .container-s h4{
+    font-size: 20px;
+  }
+  .submit-button{
+    margin-top: 100px;
   }
 }
 
@@ -1468,7 +1493,7 @@ margin-left: 20px;
     height: auto;
   }
   .background-foto-2{
-    height: 320px;
+    height: 290px;
   }
 
   .title-becas h1{
@@ -1481,7 +1506,7 @@ margin-left: 20px;
   .info-becas img{
     height: 200px;
     width: 200px;
-    margin-left: 80px;
+    margin-left: 50px;
   }
 
 }
