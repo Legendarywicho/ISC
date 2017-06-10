@@ -175,6 +175,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMB-4Xr4k2SlUF7czzF7r3dG4GANv0Sgw&callback=initMap"
+    async defer></script>
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -185,6 +187,19 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script type="text/javascript">
+    /* Google maps API*/
+            function initMap() {
+            var uluru = {lat: 18.139065, lng: -94.485201};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+
     function init() {
       window.addEventListener('scroll', function(e){
           var distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -217,6 +232,7 @@
     draggable: true // Choose whether you can drag to open on touch screens
     }
     );
+
     </script>
    </body>
 </html>
