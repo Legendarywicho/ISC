@@ -10,24 +10,29 @@ body{
      font-family: 'Roboto', sans-serif;
 }
 
+.dropdown-content{
+  position: fixed !important;
+  left: 1px !important;
+}
 .lider-1{
    background: url("../images/slider-1.png") !important;
 }
 
-.submit-button{
-  text-align: center;
+.menu-b li{
+  margin-right:90px;
 }
+
 .social-bar{
   position: fixed;
   left: 0;
   top: 250px;
-  z-index: 1000;
+  z-index: 9000;
 }
 .social-bar ul{
   list-style: none;
   padding-left: 0;
 }
-.social-bar ul li a{
+.social-bar ul li a , .button-lol a{
   display: inline-block;
   color:#fff;
   background-color: #000;
@@ -36,8 +41,12 @@ body{
   transition: all .5s;
 }
 .social-bar ul li a:hover{
-  padding-right: 35px;
+  padding-right:30px;
   padding-left: 35px;
+}
+
+.dropdown-content li a{
+  width: 200px;
 }
 
 @font-face {
@@ -103,7 +112,8 @@ body{
     font-size: 24px;
 }
 .ing-text h1{
-  font-size: 35px;
+  font-size: 60px;
+  font-weight: bold;
 }
 header div{
   transition: height 0.3s;
@@ -131,7 +141,6 @@ header.smaller{
 }
 
 header.smaller img{
-  margin-top: 10px;
   opacity: .9;
   height: 50px;
   width: 50px;
@@ -164,7 +173,6 @@ header.smaller div{
     height: 860px;
     max-width: 100%;
     background: url("../images/background.png") no-repeat center;
-    margin-bottom: 50px;
     background-size: 100%;
 }
 
@@ -239,7 +247,7 @@ header.smaller div{
     margin-top: 50px;
     width: 100%;
     position: relative;
-    height: 500px;
+    height: 600px;
     border-bottom: 2px solid black;
     background: #E8E8E8;
 }
@@ -484,7 +492,7 @@ header.smaller div{
 .info-becas h1{
   margin-top: 0;
   padding-top: 30px;
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
 }
 .info-2{
@@ -641,14 +649,14 @@ display: flex;
 }
 .container-child{
   height: 300px;
-  width: 100%;
-  margin-left: 0 !important;
-  text-align: center;
+  width: 50%;
+  margin-left: 65px !important;
+  text-align:left;
 }
 
  input{
   margin-top: 20px !important;
-  width: 50% !important;
+  width: 60%!important;
   border: 1px solid purple;
   height: 40px;
 }
@@ -669,13 +677,24 @@ label{
   background: purple;
   width: 100px;
 }
+
+.submit-button{
+  width: 30% !important;
+  margin-left: 90px;
+}
+.form-button{
+  text-align: left;
+  width: 100%;
+  margin-left: 60px;
+}
 /*--------------------s*/
 /*Seccion de contactos*/
 #map {
   margin-top: 90px;
   height: 400px;
-  width: 100%;
+  width: auto;
  }
+
  /*Botton para english*/
 
 footer{
@@ -712,7 +731,6 @@ footer h4{
   font-size: 25px;
 }
 .logo-school img{
-  box-shadow: 5px 5px 5px white;
   margin-right: 200px;
   margin-top: 40px;
   margin-left: 40px;
@@ -788,8 +806,7 @@ footer h4{
   margin-left: 30px;
 }
 #dropdown1{
-  left: 23px !important;
-  top: 530px !important;
+  top: 480px !important;
 }
 
 .hamburger{
@@ -825,12 +842,17 @@ form{
 
 /*IPAD RESOLUTION*/
 @media screen and (max-width: 921px){
+
+  .menu-b li{
+    margin-right:0px;
+  }
   .first, .second, .third{
     margin-left: 0;
   }
   .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
     display: none;
   }
+
   .logo{
     width: 100%;
     padding-right: 5px;
@@ -923,6 +945,10 @@ form{
   .container-child {
     margin-left: 20px;
   }
+  .Image-form img{
+    width: 380px;
+  }
+
   .comments{
     margin-left: 100px;
   }

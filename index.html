@@ -10,25 +10,28 @@
     </head>
     <body>
       <div class="general">
+          <div class="social-bar-container">
             <div class="social-bar">
-                <ul>
-                  <li>
-                    <a href="http://www." class="icon-facebook"></a>
-                  </li>
-                  <li>
-                    <a href="http://www." class="icon-twitter"></a>
-                  </li>
-                  <li>
-                    <a href="http://www." class="icon-instagram"></a>
-                  </li>
-                  <li class="dropdown">
-                    <a href="http://www." class="icon-earth"></a>
-                    <div class="dropdown-content">
-                        <a href="index.html">Español</a>
-                        <a href="english/index-english.html">Inglés</a>
+                  <ul>
+                    <li>
+                      <a href="http://www." class="icon-facebook"></a>
+                    </li>
+                    <li>
+                      <a href="http://www." class="icon-twitter"></a>
+                    </li>
+                    <li>
+                      <a href="http://www." class="icon-instagram"></a>
+                    </li>
+                    <div class="button-lol">
+                      <a class='dropdown-button icon-earth' href='#' data-activates='dropdown1'></a>
+                      <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">Español</a></li>
+                        <li><a href="#!">Ingles</a></li>
+                      </ul>
                     </div>
-                  </li>
-                </ul>
+                  </ul>
+                  <!-- Dropdown Trigger -->
+                </div>
             </div>
             <ul id="slide-out" class="side-nav carl-lol1">
                 <li><div class="userView">
@@ -48,11 +51,12 @@
                 <li><a class="waves-effect" href="#!">Investigacion</a></li>
                 <li><a class="waves-effect" href="#!">Tutorias</a></li>
 
-                <!-- Dropdown Structure -->
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse">
                     <div class="icon-menu hamburger" id="button-ham"></div>
                 </a>
+
+                  <!-- Dropdown Structure -->
         <div class="background-foto">
                 <header class="header">
                     <div class="inicio">
@@ -97,21 +101,21 @@
                 </section>
         </div>
         <div class="tittle-multi">
-            <h1>Multimedia</h1>
         </div>
         <section class="carusel"> <!-- Implement the beta carusel-->
               <div class="carousel carousel-slider center" data-indicators="true">
 
                   <div class="carousel-item red white-text" href="#one!">
-                      <img src="images/slider-1.png" alt="" height="500">
+                      <img src="images/slider-1.jpg" alt="" height="600">
                   </div>
                   <div class="carousel-item amber white-text" href="#two!">
-                      <img src="images/slider-2.png" alt="">
+                      <img src="images/slider-2.jpg" alt="" height="600">
                   </div>
                   <div class="carousel-item green white-text" href="#three!">
-                      <img src="images/slider-3.png" alt="">
+                      <img src="images/slider-3.jpg" alt="" height="600">
                     </div>
                     <div class="carousel-item blue white-text" href="#four!">
+                      <img src="images/slider-4.jpg" alt="" height="600">
                     </div>
                   </div>
         </div>
@@ -123,7 +127,6 @@
             <div class="info-c">
                 <img src="images/students.jpeg" alt="Martin,Alfredo" width="400px" height="500px">
                 <div class="text-5">
-
                     <h4 class="dev">
                       La Licenciatura en Ingeniería en Desarrollo y Gestión del software tiene como objetivo formar profesionales con conocimientos y habilidades en el diseño y la gestión de proyectos de desarrollo de software, sistemas de información, y aplicaciones para dispositivos móviles, serán capaces de formular propuestas innovadoras que contribuyan al incremento de la productividad de la empresa.
                     </h4>
@@ -172,6 +175,9 @@
 								<input type="text" name="Correo Electronico" placeholder="Correo" id="correo">
 							</div>
 						</div>
+            <div class="Image-form">
+              <img src="" width="500"  height="250" alt="shake that ass with me">
+            </div>
 					</div>
           <div class="submit-button">
                 <input type="submit" name="enviar" class="button-2" id="button"/>
@@ -181,7 +187,7 @@
         <footer class="footer">
             <div class="first-row">
               <div class="logo-school">
-                  <img src="images/istmo.png" alt="Logo de la escuela" width="150px" height="150px">
+                  <img src="images/favicon.png" alt="Logo de la escuela" width="150px" height="150px">
               </div>
               <div class="informacion-text">
                   <div class="number-phone">
@@ -269,7 +275,20 @@
       draggable: true // Choose whether you can drag to open on touch screens
     }
   );
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
+
+    $('.dropdown-button').dropdown({
+       inDuration: 300,
+       outDuration: 225,
+       constrainWidth: false, // Does not change width of dropdown to that of the activator
+       hover: false, // Activate on hover
+       gutter: 0, // Spacing from edge
+       belowOrigin: false, // Displays dropdown below the button
+       alignment: 'left', // Displays dropdown with edge aligned to the left of button
+       stopPropagation: false // Stops event propagation
+     }
+   );
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+
       </script>
   </div>
     </body>
