@@ -129,7 +129,6 @@ header.smaller{
     font-size: 10px;
     opacity: 0.9;
 }
-
 .center img{
   transition: all 2.5s;
 }
@@ -1097,6 +1096,9 @@ margin-left: 20px;
 @media screen and (max-width: 800px){
   .Image-form img {
     display: none;
+  }
+  .social-bar.smaller{
+    opacity: .3;
   }
   .container-plan{
     font-size: 13px;

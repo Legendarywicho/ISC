@@ -249,15 +249,19 @@
                   shrinkOn = 300,
                   header = document.querySelector(".header");
                   header2 = document.querySelector(".center-image");
+                  header3 = document.querySelector(".social-bar");
                   console.log(header);
                   console.log(header2);
+                  console.log(header3);
               if (distanceY > shrinkOn) {
                   classie.add(header,"smaller");
                   classie.add(header2,"smaller");
+                  classie.add(header3,"smaller");
               } else {
                   if (classie.has(header,"smaller")) {
                       classie.remove(header,"smaller");
                       classie.remove(header2,"smaller");
+                      classie.add(header3,"smaller");
                   }
               }
           });
