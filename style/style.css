@@ -1095,7 +1095,9 @@ margin-left: 20px;
 
 
 @media screen and (max-width: 800px){
-
+  .Image-form img {
+    display: none;
+  }
   .container-plan{
     font-size: 13px;
   }
@@ -1214,7 +1216,18 @@ margin-left: 20px;
 
     /*Formulario*/
     .container-child {
-      margin-left: 20px;
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .submit-button{
+      text-align: center;
+      width: auto !important;
+      margin-left: 60px;
+    }
+    .submit-button input {
+      width: 50% !important;
     }
     .comments{
       margin-left: 70px;
@@ -1331,7 +1344,6 @@ margin-left: 20px;
 
 @media screen and (max-width:600px){
 
-
   .text-1 h3{
     padding-left: 50px;
   }
@@ -1388,7 +1400,12 @@ margin-left: 20px;
     display: block;
   }
   .container-child{
+    text-align: left;
     margin-bottom: 0;
+  }
+
+  .submit-button{
+    text-align: left;
   }
 
   /*Seccion the becas*/
@@ -1431,6 +1448,12 @@ margin-left: 20px;
     font-size: 20px;
   }
 
+  .aspirante, .egresado{
+    height: 400px;
+  }
+  footer div h3{
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width:500px) {
@@ -1500,7 +1523,9 @@ margin-left: 20px;
     width: 200px;
     margin-left: 50px;
   }
-
+  .aspirante, .egresado{
+    height: 300px;
+  }
 }
 
 /*------*----------**/
