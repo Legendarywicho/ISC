@@ -812,6 +812,14 @@ form{
 /*IPAD RESOLUTION*/
 @media screen and (max-width: 921px){
 
+  body {
+        overflow-x: hidden !important;
+    }
+
+  .general{
+    overflow-x: hidden !important;
+
+  }
   .menu-b li{
     margin-right:0px;
   }
