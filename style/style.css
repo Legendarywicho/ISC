@@ -1344,6 +1344,9 @@ margin-left: 20px;
 
 @media screen and (max-width:600px){
 
+  .Image-form img {
+    display: none;
+  }
   .text-1 h3{
     padding-left: 50px;
   }
@@ -1457,6 +1460,9 @@ margin-left: 20px;
 }
 
 @media screen and (max-width:500px) {
+  .Image-form img {
+    display: none;
+  }
   .first-row{
     width: 100%;
   }
