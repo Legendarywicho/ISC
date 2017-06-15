@@ -9,10 +9,27 @@ body{
      overflow-x:  hidden !important;
      font-family: 'Roboto', sans-serif;
 }
-body html{
-  overflow-x:  hidden !important;
+
+strong {
+    font-weight: 800 !important;
 }
 
+.box-1 h4, .box-2 h4{
+  text-align: justify;
+  margin-right: 20px;
+  font-size: 20px !important;
+}
+.box-1 img, .box-2 img{
+  margin-top: 20px !important;
+}
+.box-2 h4{
+  margin-left: 10px;
+}
+
+.Image-form img{
+  margin-top: 20px;
+  margin-left: 50px
+  }
 .dropdown-content{
   position: fixed !important;
   left: 1px !important;
@@ -28,7 +45,7 @@ body html{
 .social-bar{
   position: fixed;
   left: 0;
-  top: 250px;
+  top: 180px;
   z-index: 2000;
 }
 .social-bar ul{
@@ -481,7 +498,7 @@ header.smaller div{
 
 .text-1{
   font-size: 20px;
-  width: 70%;
+  width: 60%;
 }
 
 .text-1 li{
@@ -544,7 +561,7 @@ header.smaller div{
   margin-right: 50px;
 }
 .first, .second, .third{
-margin-left: 50px;
+margin-left: 150px;
 width: 100%;
 text-align: left;
 display: flex;
@@ -775,7 +792,7 @@ footer h4{
   margin-left: 30px;
 }
 #dropdown1{
-  top: 480px !important;
+  top: 410px !important;
 }
 
 .hamburger{
@@ -804,7 +821,7 @@ form{
   z-index: 5000 !important;
 }
 
-.general ul a img {
+. ul a img {
   margin-top: 20px;
 }
 /*Responsive design*/
@@ -823,7 +840,11 @@ form{
     margin-right:0px;
   }
   .first, .second, .third{
-    margin-left: 0;
+    margin-left: 0 !important;
+  }
+
+  .first h3, .second h3, .third h3{
+    font-size: 30px;
   }
   .inicio , .plan-de-estudios,.perfiles-academicos, .becas{
     display: none;
@@ -923,6 +944,7 @@ form{
   }
   .Image-form img{
     width: 380px;
+    margin-left: 0;
   }
 
   .comments{
@@ -1012,12 +1034,16 @@ text-align: left;
 .text-1{
 font-size: 20px;
 width: 100%;
-text-align: center;
+text-align: left;
 }
 
 .text-1 li{
 padding-top: 30px;
 font-size: 18px;
+}
+.menu-b{
+  text-align: left !important;
+  width: auto !important;
 }
 
 .button{
@@ -1071,6 +1097,9 @@ margin-left: 20px;
 
 
 @media screen and (max-width: 800px){
+  .first h3, .second h3, .third h3{
+    font-size: 20px;
+  }
   .Image-form img {
     display: none;
   }
@@ -1316,6 +1345,8 @@ margin-left: 20px;
 #map{
   margin-top: 20px;
 }
+
+
 }
 /*Write code above this line*/
 
@@ -1344,7 +1375,7 @@ margin-left: 20px;
   }
 
   .general h3{
-    font-size: 35px;
+    font-size: 30px;
   }
   .number-phone{
     display: none;
@@ -1395,7 +1426,7 @@ margin-left: 20px;
 
   /*Seccion the becas*/
   .background-foto-2{
-    height: 500px;
+    height: 400px;
   }
   .container-s{
     display: block;

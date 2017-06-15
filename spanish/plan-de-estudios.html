@@ -225,7 +225,7 @@
 							</div>
 						</div>
             <div class="Image-form">
-              <img src="" width="500"  height="250" alt="shake that ass with me">
+              <img src="../images/library.jpg" width="370"  height="250" alt="shake that ass with me">
             </div>
 					</div>
           <div class="submit-button">
@@ -236,11 +236,11 @@
         <footer class="footer">
             <div class="first-row">
               <div class="logo-school">
-                  <img src="images/favicon.png" alt="Logo de la escuela" width="150px" height="150px">
+                  <img src="../images/logo.png" alt="Logo de la escuela" width="150px" height="150px">
               </div>
               <div class="informacion-text">
                   <div class="number-phone">
-                    <img src="images/phone.png" alt="Telefono" height="80" width="80">
+                    <img src="../images/phone.png" alt="Telefono" height="80" width="80">
                       <div class="text-num">
                           <h3>Lada sin costo</h3>
                           <h3 id="phone-number">01 800 00 00 438</h3>
@@ -250,13 +250,13 @@
               <h4>Síguenos:</h4>
               <div class="social">
                   <a href="https://twitter.com/uistmoamericana?lang=es" target="_blank">
-                      <img src="images/twit.png" alt="Twitter" class="twitter" height="50" width="50">
+                      <img src="../images/twit.png" alt="Twitter" class="twitter" height="50" width="50">
                   </a>
                   <a href="https://www.facebook.com/Universidad-Istmo-Americana-153904661343430/" target="_blank">
-                      <img src="images/face.png" alt="Facebook" class="facebook" height="50" width="50">
+                      <img src="../images/face.png" alt="Facebook" class="facebook" height="50" width="50">
                   </a>
                   <a href="https://www.instagram.com/uistmoamericana/" target="_blank">
-                      <img src="images/insta.png" alt="Instagram" class="insta" height="50" width="50">
+                      <img src="../images/insta.png" alt="Instagram" class="insta" height="50" width="50">
                   </a>
               </div>
             </div>
@@ -293,38 +293,58 @@
 		<!-- Compiled and minified JavaScript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 		<script type="text/javascript">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+		<script type="text/javascript">
+
 		function init() {
 				window.addEventListener('scroll', function(e){
 						var distanceY = window.pageYOffset || document.documentElement.scrollTop,
 								shrinkOn = 300,
 								header = document.querySelector(".header");
 								header2 = document.querySelector(".center-image");
+								header3 = document.querySelector(".social-bar");
 								console.log(header);
 								console.log(header2);
+								console.log(header3);
 						if (distanceY > shrinkOn) {
 								classie.add(header,"smaller");
 								classie.add(header2,"smaller");
+								classie.add(header3,"smaller");
 						} else {
 								if (classie.has(header,"smaller")) {
 										classie.remove(header,"smaller");
 										classie.remove(header2,"smaller");
+										classie.add(header3,"smaller");
 								}
 						}
 				});
 		}
 		window.onload = init();
 
-		/**Nav bar*/
-		$(".button-collapse").sideNav();
+			/**Nav bar*/
+			$(".button-collapse").sideNav();
 	// Initialize collapsible (uncomment the line below if you use the dropdown variation)
 	//$('.collapsible').collapsible();
-		$('.button-collapse').sideNav({
-		menuWidth: 260, // Default is 300
-		edge: 'left', // Choose the horizontal origin
-		closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-		draggable: true // Choose whether you can drag to open on touch screens
-	}
+			$('.button-collapse').sideNav({
+			menuWidth: 260, // Default is 300
+			edge: 'left', // Choose the horizontal origin
+			closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+			draggable: true // Choose whether you can drag to open on touch screens
+		}
 	);
+
+		$('.dropdown-button').dropdown({
+			 inDuration: 300,
+			 outDuration: 225,
+			 constrainWidth: false, // Does not change width of dropdown to that of the activator
+			 hover: false, // Activate on hover
+			 gutter: 0, // Spacing from edge
+			 belowOrigin: false, // Displays dropdown below the button
+			 alignment: 'left', // Displays dropdown with edge aligned to the left of button
+			 stopPropagation: false // Stops event propagation
+		 }
+	 );
+		$('.carousel.carousel-slider').carousel({fullWidth: true});
 		</script>
 </body>
 </html>
